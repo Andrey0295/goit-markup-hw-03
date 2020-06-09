@@ -1,0 +1,274 @@
+/* Цвет основного текста #212121 */
+/* Цвет вторичного текста #757575 */
+/* Белый #FFFFFF */
+/* Акцент #2196F3 */
+
+/* Вторичный цвет фона #F5F4FA */
+/* фоновый цвет футера #2F303A */
+
+/* Палитра цветов */
+:root {
+  --primery-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --primery-background-color: #e5e5e5;
+  --secondary-background-color: #f5f4fa;
+  --white-color: #ffffff;
+  --footer-color: #2f303a;
+}
+body {
+  background-color: var(--white-color);
+  font-family: Roboto, sans-serif;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Стиллизация логотипа */
+.logo-accent {
+  color: var(--accent-color);
+}
+.logo-studio {
+  color: #000000;
+}
+.logo {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: none;
+}
+/* Навигационные ссылки */
+.link {
+  color: var(--primery-text-color);
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.link:hover {
+  color: var(--accent-color);
+}
+.link:focus {
+  color: var(--accent-color);
+}
+.contact {
+  color: var(--title-text-color);
+}
+.contact:hover {
+  color: var(--accent-color);
+}
+.contact:focus {
+  color: var(--accent-color);
+}
+
+/* Стиллизация Hero */
+
+.button-hero {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* Примерныйцвет для кнопки */
+.button-hero:focus {
+  color: var(--primery-text-color);
+}
+/* Нам месте background Будет фоновая картинка */
+.title-hero {
+  color: #ffffff;
+  background-color: var(--title-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* секция-наши преимущества */
+h3.advantage {
+  color: var(--primery-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantage-comment {
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+/* Секция- чем мы занимаеся */
+.services {
+  color: var(--white-color);
+  /* background-color поставленн, что бы не потерять надпись на белом фоне */
+  background-color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* Секция- наша команда */
+.ouver-team {
+  background-color: var(--secondary-background-color);
+}
+.name {
+  color: var(--primery-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.position {
+  color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.social-link:hover {
+  color: var(--accent-color);
+}
+.social-link:focus {
+  color: var(--accent-color);
+}
+/* Стилизация footer */
+.visit {
+  background-color: var(--footer-color);
+}
+/* Секция- Наши клиенты */
+/* .ouver-clients:hover {
+  color: var(--accent-color);
+}
+.ouver-clients:focus {
+  color: var(--accent-color);
+} */
+/* Стилизация логотипа в футере */
+.web-foot {
+  color: var(--accent-color);
+}
+.studio-foot {
+  color: var(--white-color);
+}
+
+.adress-contact {
+  color: var(--white-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+.call {
+  color: var(--white-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.author {
+  color: rgba(255, 255, 255, 0.4);
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  /* or 200% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.social:hover {
+  color: var(--accent-color);
+}
+.social:focus {
+  color: var(--accent-color);
+}
+/* Стиллизация страницы "Портфолио" */
+
+/* Кнопки портфолио */
+.first-button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.portfolio-button {
+  color: var(--primery-text-color);
+  background-color: var(--secondary-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.portfolio-button:hover {
+  color: var(--accent-color);
+}
+.portfolio-button:focus {
+  color: var(--accent-color);
+}
+/* Стилизация галлереи */
+.portfolio-title {
+  color: var(--primery-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+}
+.portfolio-service {
+  color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  /* identical to box height, or 187% */
+
+  letter-spacing: 0.03em;
+}
