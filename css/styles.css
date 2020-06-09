@@ -26,6 +26,16 @@ h2 {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 /* Стиллизация логотипа */
 .logo-accent {
@@ -44,8 +54,14 @@ h2 {
 }
 .list {
   list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 /* Навигационные ссылки */
+.list .link.current {
+  color: var(--accent-color);
+}
+
 .link {
   color: var(--primery-text-color);
   text-decoration: none;
@@ -54,6 +70,9 @@ h2 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.navigation-link {
+  margin-bottom: 0px;
 }
 .link:hover {
   color: var(--accent-color);
@@ -72,8 +91,13 @@ h2 {
 }
 
 /* Стиллизация Hero */
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+}
 
 .button-hero {
+  display: inline-block;
   color: #ffffff;
   background-color: var(--accent-color);
   font-weight: 700;
@@ -81,6 +105,12 @@ h2 {
   line-height: 1.8;
   text-align: center;
   letter-spacing: 0.06em;
+  min-width: 200px;
+  min-height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 1px solid transparent;
 }
 /* Примерныйцвет для кнопки */
 .button-hero:focus {
@@ -90,16 +120,30 @@ h2 {
 .title-hero {
   color: #ffffff;
   background-color: var(--title-text-color);
+  outline: 2px solid black;
+  margin-top: 0px;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 /* секция-наши преимущества */
+.element {
+  margin-bottom: 94px;
+}
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.advantage,
+.advantage-comment {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 h3.advantage {
   color: var(--primery-text-color);
 
@@ -108,6 +152,7 @@ h3.advantage {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .advantage-comment {
   color: var(--title-text-color);
@@ -119,6 +164,16 @@ h3.advantage {
   letter-spacing: 0.03em;
 }
 /* Секция- чем мы занимаеся */
+figure {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.service {
+  margin-bottom: 94px;
+}
+.services-title {
+  margin-bottom: 50px;
+}
 .services {
   color: var(--white-color);
   /* background-color поставленн, что бы не потерять надпись на белом фоне */
@@ -133,8 +188,12 @@ h3.advantage {
   text-decoration: none;
 }
 /* Секция- наша команда */
+.team {
+  margin-bottom: 50px;
+}
 .ouver-team {
   background-color: var(--secondary-background-color);
+  margin-bottom: 94px;
 }
 .name {
   color: var(--primery-text-color);
@@ -169,12 +228,19 @@ h3.advantage {
   background-color: var(--footer-color);
 }
 /* Секция- Наши клиенты */
+.clients {
+  margin-bottom: 94px;
+}
+.clients-title {
+  margin-bottom: 50px;
+}
 /* .ouver-clients:hover {
   color: var(--accent-color);
 }
 .ouver-clients:focus {
   color: var(--accent-color);
 } */
+
 /* Стилизация логотипа в футере */
 .web-foot {
   color: var(--accent-color);
@@ -220,11 +286,24 @@ h3.advantage {
   color: var(--accent-color);
 }
 /* Стиллизация страницы "Портфолио" */
-
+.navigation-portfolio {
+  margin-bottom: 93px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.gallery {
+  margin-bottom: 94px;
+}
 /* Кнопки портфолио */
 .first-button {
   color: var(--white-color);
   background-color: var(--accent-color);
+  font-family: Roboto;
 
   font-weight: 500;
   font-size: 16px;
@@ -233,10 +312,15 @@ h3.advantage {
 
   text-align: center;
   letter-spacing: 0.03em;
+  min-width: 73px;
+  min-height: 38px;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 .portfolio-button {
   color: var(--primery-text-color);
   background-color: var(--secondary-background-color);
+  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -244,6 +328,10 @@ h3.advantage {
 
   text-align: center;
   letter-spacing: 0.03em;
+  min-width: 73px;
+  min-height: 38px;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 .portfolio-button:hover {
   color: var(--accent-color);
