@@ -35,8 +35,8 @@ h2 {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
+
 /* Стиллизация логотипа */
 .logo-accent {
   color: var(--accent-color);
@@ -56,8 +56,32 @@ h2 {
   list-style: none;
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-left: 0px;
 }
 /* Навигационные ссылки */
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+.site-nav li {
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin-right: 0px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.auth-nav {
+  display: flex;
+  margin-left: 305px;
+}
+.auth-nav .item + .item {
+  margin-left: 30px;
+}
+
 .list .link.current {
   color: var(--accent-color);
 }
@@ -72,6 +96,8 @@ h2 {
   letter-spacing: 0.02em;
 }
 .navigation-link {
+  display: flex;
+  align-items: center;
   margin-bottom: 0px;
 }
 .link:hover {
@@ -120,7 +146,7 @@ h2 {
 .title-hero {
   color: #ffffff;
   background-color: var(--title-text-color);
-  outline: 2px solid black;
+
   margin-top: 0px;
   margin-bottom: 30px;
 
@@ -135,9 +161,16 @@ h2 {
 .element {
   margin-bottom: 94px;
 }
+.element ul {
+  display: flex;
+}
+.element li + li {
+  margin-left: 30px;
+}
+
 .section-title {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 .advantage,
 .advantage-comment {
@@ -164,6 +197,13 @@ h3.advantage {
   letter-spacing: 0.03em;
 }
 /* Секция- чем мы занимаеся */
+.service ul {
+  display: flex;
+  padding-left: 0px;
+}
+.service-item + .service-item {
+  margin-left: 30px;
+}
 figure {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -194,6 +234,15 @@ figure {
 .ouver-team {
   background-color: var(--secondary-background-color);
   margin-bottom: 94px;
+  display: flex;
+}
+.ouver-team ul {
+  display: flex;
+  padding-left: 0px;
+  justify-content: space-around;
+}
+.ouver-team li + li {
+  margin-left: 30px;
 }
 .name {
   color: var(--primery-text-color);
@@ -228,6 +277,16 @@ figure {
   background-color: var(--footer-color);
 }
 /* Секция- Наши клиенты */
+.flex-block {
+  display: flex;
+}
+.flex-block ul {
+  display: flex;
+  justify-content: space-around;
+}
+.clients li + li {
+  margin-left: 30px;
+}
 .clients {
   margin-bottom: 94px;
 }
@@ -242,6 +301,25 @@ figure {
 } */
 
 /* Стилизация логотипа в футере */
+.footer-contact ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+}
+.footer-contact li {
+  margin-bottom: 10px;
+}
+.foot-link {
+  display: flex;
+  justify-content: center;
+}
+.foot-link ul {
+  display: flex;
+}
+.call {
+  text-align: center;
+}
+
 .web-foot {
   color: var(--accent-color);
 }

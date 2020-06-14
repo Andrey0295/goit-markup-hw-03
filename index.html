@@ -22,19 +22,21 @@
           ><span class="logo-accent">Web</span
           ><span class="logo-studio"> Studio</span></a
         >
-        <ul class="list">
-          <li><a href="" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+        <ul class="list site-nav">
+          <li class="item"><a href="" class="link current">Студия</a></li>
+          <li class="item">
+            <a href="./portfolio.html" class="link">Портфолио</a>
+          </li>
+          <li class="item"><a href="" class="link">Контакты</a></li>
         </ul>
         <address>
-          <ul class="list">
-            <li>
+          <ul class="list auth-nav">
+            <li class="item">
               <a href="mailto:info@devstudio.com" class="link contact"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="item">
               <a href="tel:+380961111111" class="link contact">+380961111111</a>
             </li>
           </ul>
@@ -107,29 +109,20 @@
       <div class="container">
         <h2 class="services-title">Чем мы занимаемся</h2>
         <ul class="list">
-          <li>
-            <figure>
-              <img src="./images/computer.jpg " alt="Компьютер" />
-              <figcaption>
-                <a href="" class="services">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</a>
-              </figcaption>
-            </figure>
+          <li class="service-item">
+            <img src="./images/computer.jpg " alt="Компьютер" />
+
+            <a href="" class="services">Десктопные приложения</a>
           </li>
-          <li>
-            <figure>
-              <img src="./images/phone.jpg" alt="телефон" />
-              <figcaption>
-                <a href="" class="services">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</a>
-              </figcaption>
-            </figure>
+          <li class="service-item">
+            <img src="./images/phone.jpg" alt="телефон" />
+
+            <a href="" class="services">Мобильные приложения</a>
           </li>
-          <li>
-            <figure>
-              <img src="./images/monitor.jpg" alt="монитор" />
-              <figcaption>
-                <a href="" class="services">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</a>
-              </figcaption>
-            </figure>
+          <li class="service-item">
+            <img src="./images/monitor.jpg" alt="монитор" />
+
+            <a href="" class="services">Дизайнерские решения</a>
           </li>
         </ul>
       </div>
@@ -141,13 +134,12 @@
 
         <ul class="list">
           <li class="john">
-            <figure>
+            <div>
               <img src="./images/our-team/john.jpg" alt="фото-портрет" />
-              <figcaption>
-                <p class="name"><b>John Smith</b></p>
-                <p class="position">Product designer</p>
-              </figcaption>
-            </figure>
+
+              <p class="name"><b>John Smith</b></p>
+              <p class="position">Product designer</p>
+            </div>
 
             <address>
               <ul class="list">
@@ -162,13 +154,12 @@
             </address>
           </li>
           <li class="marta">
-            <figure>
+            <div>
               <img src="./images/our-team/marta.jpg" alt="фото-портрет" />
-              <figcaption>
-                <p class="name"><b>Marta Steward</b></p>
-                <p class="position">Frontend Developer</p>
-              </figcaption>
-            </figure>
+
+              <p class="name"><b>Marta Steward</b></p>
+              <p class="position">Frontend Developer</p>
+            </div>
 
             <address>
               <ul class="list">
@@ -182,13 +173,12 @@
             </address>
           </li>
           <li class="robert">
-            <figure>
+            <div>
               <img src="./images/our-team/robert.jpg" alt="фото-портрет" />
-              <figcaption>
-                <p class="name"><b>Robert Jakis</b></p>
-                <p class="position">Marketing</p>
-              </figcaption>
-            </figure>
+
+              <p class="name"><b>Robert Jakis</b></p>
+              <p class="position">Marketing</p>
+            </div>
 
             <address>
               <ul class="list">
@@ -203,13 +193,12 @@
           </li>
 
           <li class="martin">
-            <figure>
+            <div>
               <img src="./images/our-team/martin.jpg" alt="фото-портрет" />
-              <figcaption>
-                <p class="name"><b>Martin Doe</b></p>
-                <p class="position">UI Designer</p>
-              </figcaption>
-            </figure>
+
+              <p class="name"><b>Martin Doe</b></p>
+              <p class="position">UI Designer</p>
+            </div>
 
             <address>
               <ul class="list">
@@ -227,7 +216,7 @@
       </div>
     </section>
     <!-- Дальше идет секция "Постоянные клиенты" -->
-    <section class="clients">
+    <section class="clients flex-block">
       <div class="container">
         <h2 class="clients-title">Постоянные клиенты</h2>
         <ul class="list">
@@ -279,34 +268,42 @@
     <footer class="visit">
       <!-- <h3>Контакты</h3> -->
 
-      <address>
-        <ul class="list">
-          <li>
-            <a href="" class="logo"
-              ><span class="web-foot">Web</span>
-              <span class="studio-foot">Studio</span>
-            </a>
-          </li>
-          <li class="adress-contact">г. Киев, пр-т Леси Украинки, 26</li>
-          <li>
-            <a href="mailto:info@example.com" class="link contact"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380991111111" class="link contact">+380991111111</a>
-          </li>
-        </ul>
+      <div class="container">
+        <address>
+          <div class="footer-contact">
+            <ul class="list">
+              <li>
+                <a href="" class="logo"
+                  ><span class="web-foot">Web</span>
+                  <span class="studio-foot">Studio</span>
+                </a>
+              </li>
+              <li class="adress-contact">г. Киев, пр-т Леси Украинки, 26</li>
+              <li>
+                <a href="mailto:info@example.com" class="link contact"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380991111111" class="link contact"
+                  >+380991111111</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <b class="call">Присоединяйтесь</b>
-        <ul class="list">
-          <li><a href="" class="social">instagram</a></li>
-          <li><a href="" class="social">facebook</a></li>
-          <li><a href="" class="social">twitter</a></li>
-          <li><a href="" class="social">linkedin</a></li>
-        </ul>
-      </address>
-      <p class="author">2020 | Developed by GoIT Students</p>
+          <div class="foot-link">
+            <h2 class="call">Присоединяйтесь</h2>
+            <ul class="list">
+              <li><a href="" class="social">instagram</a></li>
+              <li><a href="" class="social">facebook</a></li>
+              <li><a href="" class="social">twitter</a></li>
+              <li><a href="" class="social">linkedin</a></li>
+            </ul>
+          </div>
+        </address>
+        <p class="author">2020 | Developed by GoIT Students</p>
+      </div>
     </footer>
   </body>
 </html>
