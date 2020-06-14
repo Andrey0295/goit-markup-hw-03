@@ -43,13 +43,13 @@
     </header>
     <main>
       <!-- Секция-галлерея услуг -->
-      <section class="gallery">
-        <div class="container">
+      <section class="gallery container">
+        <div>
           <!-- <h1> - в будущем это скрытый заголовок -->
           <h1>Портфолио</h1>
           <!-- <h2> - в будущем это скрытый заголовок -->
           <h2>Галлерея услуг</h2>
-          <ul class="list">
+          <ul class="list portfolio-item">
             <li>
               <button type="button" class="first-button">
                 Все
@@ -68,8 +68,8 @@
               <button type="button" class="portfolio-button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="list">
-            <li>
+          <ul class="list flex-gallery">
+            <li class="gallery-item">
               <a href="" class="link"
                 ><img
                   src="./images/gallery/team-item.jpg"
@@ -85,7 +85,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="gallery-item">
               <a href="" class="link"
                 ><img
                   src="./images/gallery/sport-design.jpg"
@@ -102,7 +102,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="gallery-item">
               <a href="" class="link"
                 ><img
                   src="./images/gallery/seafood.jpg"
@@ -117,7 +117,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="gallery-item">
               <a href="" class="link"
                 ><img src="./images/gallery/headphones.jpg" alt="наушники" />
 
@@ -129,7 +129,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="gallery-item">
               <a href="" class="link"
                 ><img src="./images/gallery/boxes.jpg" alt="две коробки" />
 
@@ -141,7 +141,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="gallery-item">
               <a href="" class="link"
                 ><img src="./images/gallery/monitor.jpg" alt="экран монитора" />
 
@@ -153,7 +153,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="gallery-item">
               <a href="" class="link"
                 ><img src="./images/gallery/newspaper.jpg" alt="газета" />
 
@@ -165,7 +165,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="gallery-item">
               <a href="" class="link"
                 ><img src="./images/gallery/label.jpg" alt="эмблема " />
 
@@ -177,7 +177,7 @@
                 </p>
               </a>
             </li>
-            <li>
+            <li class="gallery-item">
               <a href="" class="link"
                 ><img
                   src="./images/gallery/user-monitor.jpg"
@@ -199,34 +199,42 @@
     <footer class="visit">
       <!-- <h3>Контакты</h3> -->
 
-      <address>
-        <ul class="list">
-          <li>
-            <a href="" class="logo"
-              ><span class="web-foot">Web</span>
-              <span class="studio-foot">Studio</span>
-            </a>
-          </li>
-          <li class="adress-contact">г. Киев, пр-т Леси Украинки, 26</li>
-          <li>
-            <a href="mailto:info@example.com" class="link contact"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380991111111" class="link contact">+380991111111</a>
-          </li>
-        </ul>
+      <div class="container">
+        <address>
+          <div class="footer-contact">
+            <ul class="list">
+              <li>
+                <a href="" class="logo"
+                  ><span class="web-foot">Web</span>
+                  <span class="studio-foot">Studio</span>
+                </a>
+              </li>
+              <li class="adress-contact">г. Киев, пр-т Леси Украинки, 26</li>
+              <li>
+                <a href="mailto:info@example.com" class="link contact"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380991111111" class="link contact"
+                  >+380991111111</a
+                >
+              </li>
+            </ul>
+          </div>
+        </address>
+        <div class="foot-link">
+          <h2 class="call">Присоединяйтесь</h2>
+          <ul class="list">
+            <li><a href="" class="social">instagram</a></li>
+            <li><a href="" class="social">facebook</a></li>
+            <li><a href="" class="social">twitter</a></li>
+            <li><a href="" class="social">linkedin</a></li>
+          </ul>
+        </div>
 
-        <b class="call">Присоединяйтесь</b>
-        <ul class="list">
-          <li><a href="" class="social">instagram</a></li>
-          <li><a href="" class="social">facebook</a></li>
-          <li><a href="" class="social">twitter</a></li>
-          <li><a href="" class="social">linkedin</a></li>
-        </ul>
-      </address>
-      <p class="author">2020 | Developed by GoIT Students</p>
+        <p class="author">2020 | Developed by GoIT Students</p>
+      </div>
     </footer>
   </body>
 </html>

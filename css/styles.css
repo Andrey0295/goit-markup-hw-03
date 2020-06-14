@@ -35,6 +35,7 @@ h2 {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  /* outline: 1px solid black; */
 }
 
 /* Стиллизация логотипа */
@@ -301,8 +302,13 @@ figure {
 } */
 
 /* Стилизация логотипа в футере */
+
+.footer-contact {
+  display: flex;
+}
 .footer-contact ul {
   display: flex;
+
   flex-direction: column;
   padding-top: 45px;
 }
@@ -310,11 +316,13 @@ figure {
   margin-bottom: 10px;
 }
 .foot-link {
-  display: flex;
+  /* display: flex; */
+
   justify-content: center;
 }
 .foot-link ul {
   display: flex;
+  justify-content: center;
 }
 .call {
   text-align: center;
@@ -375,10 +383,24 @@ p {
   margin-bottom: 0px;
 }
 .gallery {
+  display: flex;
   margin-bottom: 94px;
+  /* outline: 1px solid tomato; */
+}
+.gallery .portfolio-item {
+  display: flex;
+  justify-content: center;
+}
+.gallery h1 {
+  text-align: center;
 }
 /* Кнопки портфолио */
+.portfolio-item li + li {
+  margin-left: 8px;
+  margin-bottom: 34px;
+}
 .first-button {
+  border-style: none;
   color: var(--white-color);
   background-color: var(--accent-color);
   font-family: Roboto;
@@ -395,7 +417,9 @@ p {
   border-radius: 4px;
   padding: 6px 22px;
 }
+
 .portfolio-button {
+  border-style: none;
   color: var(--primery-text-color);
   background-color: var(--secondary-background-color);
   font-family: Roboto;
@@ -418,6 +442,25 @@ p {
   color: var(--accent-color);
 }
 /* Стилизация галлереи */
+.flex-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* outline: 1px solid black; */
+}
+.gallery-item {
+  width: 370px;
+  /* background-color: blue; */
+  /* outline: 1px solid black; */
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.gallery-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.gallery-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
 .portfolio-title {
   color: var(--primery-text-color);
 
