@@ -19,6 +19,7 @@
 body {
   background-color: var(--white-color);
   font-family: Roboto, sans-serif;
+  margin: 0px;
 }
 h2 {
   font-weight: 700;
@@ -36,6 +37,9 @@ h2 {
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 1px solid black; */
+}
+.visually-hidden {
+  visibility: hidden;
 }
 
 /* Стиллизация логотипа */
@@ -121,6 +125,10 @@ h2 {
 .hero {
   text-align: center;
   margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  /*временный юэкграунд */
+  background-color: burlywood;
 }
 
 .button-hero {
@@ -146,7 +154,7 @@ h2 {
 /* Нам месте background Будет фоновая картинка */
 .title-hero {
   color: #ffffff;
-  background-color: var(--title-text-color);
+  /* background-color: var(--title-text-color); */
 
   margin-top: 0px;
   margin-bottom: 30px;
@@ -168,10 +176,16 @@ h2 {
 .element li + li {
   margin-left: 30px;
 }
+.element .icons {
+  margin-bottom: 30px;
+}
 
 .section-title {
   margin-top: 0px;
   margin-bottom: 50px;
+}
+.first-icon {
+  background-color: teal;
 }
 .advantage,
 .advantage-comment {
@@ -302,6 +316,11 @@ figure {
 } */
 
 /* Стилизация логотипа в футере */
+.test {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: baseline;
+}
 
 .footer-contact {
   display: flex;
@@ -316,9 +335,10 @@ figure {
   margin-bottom: 10px;
 }
 .foot-link {
+  margin-left: 69px;
   /* display: flex; */
 
-  justify-content: center;
+  /* justify-content: center; */
 }
 .foot-link ul {
   display: flex;
